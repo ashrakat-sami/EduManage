@@ -1,0 +1,27 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form method="post">
+    <label asp-for="Name">
+    </label>
+    <input asp-for="Name" class="Uinput" />
+    <span asp-validation-for="Name" class="errormessage"></span>
+    <br />
+
+    <label asp-for ="Capacity" ></label>
+    <input asp-for="Capacity" class="Uinput" />
+    <span asp-validation-for="Capacity" class="errormessage"></span>
+    <br />
+
+    <input type="submit" id="btn" />
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

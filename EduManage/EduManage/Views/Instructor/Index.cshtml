@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Instructor>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<a asp-action="Create" asp-controller="Instructor" class="btn btn-info" style="color:white">Add new instructor</a>
+<br />
+<br />
+<h1>Instructors</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="4"> No instructors exist</td>
+            </tr>
+        }
+        else
+        {
+
+            @foreach (var d in Model)
+            {
+                <tr>
+                    <td>@d.Id</td>
+                    <td>@d.Fname</td>
+                    <td>@d.Lname</td>
+                    <td>@d.Age</td>
+                    <td>@d.Phone</td>
+                    <td>@d.Email</td>                   
+                    <td><a asp-action="Details" asp-controller="Instructor" asp-route-Id="@d.Id" class="btn btn-primary">Details</a></td>
+                    <td><a asp-action="Edit" asp-controller="Instructor" asp-route-Id="@d.Id" class="btn bg-success" style="color:white">Edit</a></td>
+                    <td><a asp-action="Delete" asp-controller="Instructor" asp-route-Id="@d.Id" class="btn btn-danger">Delete</a></td>
+
+                </tr>
+            }
+
+        }
+
+    </tbody>
+</table>

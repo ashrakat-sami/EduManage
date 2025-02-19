@@ -1,0 +1,55 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "Create";
+    SelectList dlist = new SelectList(ViewBag.depts, "Id", "Name");
+    SelectList clist = new SelectList(ViewBag.crs, "Id", "Name");
+}
+
+
+    <h1>Sign up</h1>
+
+    <form method="post">
+
+        <label asp-for="Fname">
+        </label>
+    <input asp-for="Fname" class="Uinput" />
+        <span asp-validation-for="Fname" class="errormessage"></span>
+        <br />
+        <label asp-for="Lname">
+        </label>
+    <input asp-for="Lname" class="Uinput" />
+        <span asp-validation-for="Lname" class="errormessage"></span>
+        <br />
+        <label asp-for="Age"></label>
+    <input asp-for="Age" class="Uinput" />
+        <span asp-validation-for="Age" class="errormessage"></span>
+        <br />
+        <label asp-for="Phone">
+        </label>
+    <input asp-for="Phone" class="Uinput" />
+        <span asp-validation-for="Phone" class="errormessage"></span>
+        <br />
+        <label asp-for="Email"></label>
+    <input asp-for="Email" class="Uinput" />
+        <span asp-validation-for="Email" class="errormessage"></span>
+        <br />
+        <label asp-for="Password"></label>
+    <input asp-for="Password" class="Uinput" />
+        <span asp-validation-for="Password" class="errormessage"></span>
+        <br />
+        <label asp-for="ConfirmPassword"></label>
+    <input asp-for="ConfirmPassword" class="Uinput" />
+        <span asp-validation-for="ConfirmPassword" class="errormessage"></span>
+        <br />
+
+       
+       
+
+        <input type="submit" id="btn" />
+
+    </form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

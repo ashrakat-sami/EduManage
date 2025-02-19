@@ -1,0 +1,13 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "DeleteDepartment";
+}
+
+<h1 class="alert alert-danger confirmDel">
+    Delete <b>@Model.Name</b> department?
+</h1>
+
+
+<form method="post">
+    <input type="submit" value="Yes" class="btn btn-danger yesDel" />
+</form>

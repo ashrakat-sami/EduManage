@@ -1,0 +1,34 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "DepartmentEdit";
+}
+
+
+
+
+
+<h1>Edit</h1>
+
+<form method="post">
+
+    <label asp-for="Name">
+    </label>
+    <input asp-for="Name" class="Uinput" />
+    <span asp-validation-for="Name" class="errormessage"></span>
+    <br />
+    <label asp-for="Capacity">
+    </label>
+    <input asp-for="Capacity" class="Uinput" />
+    <span asp-validation-for="Capacity" class="errormessage"></span>
+    <br />
+    <br />
+
+    <input type="submit" value="Edit" id="btn" />
+
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+

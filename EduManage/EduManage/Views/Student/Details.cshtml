@@ -1,0 +1,45 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Details";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" />
+
+
+@* <a asp-action="Create" asp-controller="Student" class="btn btn-primary">Add</a> *@
+
+<h1>@Model.Fname @Model.Lname 's details</h1>
+
+<h1 class="alert alert-info" style="background:white">
+
+    Id: @Model.Id
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+    Name: @Model.Fname @Model.Lname
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+    Phone: @Model.Phone 
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+    Email: @Model.Email
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+    Department: @Model.Department.Name
+</h1>
+
+<h1 class="alert alert-info" style="background:white">
+     @Model.Fname @Model.Lname' Degrees: <br />
+
+    @foreach (var s in Model.StudentCourses)
+    {
+
+        <p> * @s.Course.Name : @s.Degree</p>
+
+
+    }
+</h1>
+
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Department>
+@{
+    ViewData["Title"] = "Departments";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" />
+
+<a asp-action="Create" asp-controller="Department" class="btn btn-info" style="color:white">Add new department</a><br />
+<br />
+<h1>Departments</h1>
+
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3"> No Department exist</td>
+            </tr>
+        }
+        else
+        {
+
+            @foreach (var d in Model)
+            {
+                <tr>
+                    <td>@d.Id</td>
+                    <td>@d.Name</td>
+                    <td>@d.Capacity</td>
+                    <td><a asp-action="Details" asp-controller="Department" asp-route-Id="@d.Id" class="btn btn-primary">Details</a></td>
+                    <td><a asp-action="Edit" asp-controller="Department" asp-route-Id="@d.Id" class="btn bg-success" style="color:white">Edit</a></td>
+                    <td><a asp-action="Delete" asp-controller="Department" asp-route-Id="@d.Id" class="btn btn-danger">Delete</a></td>
+
+                </tr>
+            }
+
+        }
+
+    </tbody>
+</table>

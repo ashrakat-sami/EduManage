@@ -1,0 +1,35 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "DepartmentDtails";
+   
+}
+
+<h1>@Model.Name 's details</h1>
+
+<h1 class="alert alert-info" style="background:white">
+
+   Id: @Model.Id  
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+   Name: @Model.Name
+</h1>
+<h1 class="alert alert-info" style="background:white">
+
+   Capacity: @Model.Capacity students
+</h1>
+<h1 class="alert alert-info" style="background:white">
+    Courses available in @Model.Name: <br />
+    
+    @foreach (var s in Model.Courses)
+    {
+
+      <p> * @s.Name : @s.Duration days</p>
+        
+
+    }
+</h1>
+
+
+
+
