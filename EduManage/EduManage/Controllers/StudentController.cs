@@ -1,22 +1,32 @@
 ﻿
 using EduManage.Data;
+using EduManage.Services;
 
 namespace EduManage.Controllers
 {
     //[Route("c/{action=index}/{id:int?}")] 
     public class StudentController : Controller
     {
-        ApplicationDbContext context = new ApplicationDbContext();
+        private IStudent service;
+        private IDepartment dService;
+
+        public StudentController(IStudent service,IDepartment dService)
+        {
+            this.service = service;
+            this.dService = dService;
+        }
+
         public IActionResult Index()
         {
-            var stdList = context.Students.Include(d => d.Department).ToList();
+            var stdList = service.GetAll();
             return View(stdList);
 
         }
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.depts = context.Departments.ToList();
+            ViewBag.depts = dService.GetAll();
+           
             return View();
         }
         [HttpPost]
@@ -24,11 +34,12 @@ namespace EduManage.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.Students.Add(student);
-                context.SaveChanges();
+                //context.Students.Add(student);
+                //context.SaveChanges();
+                service.Create(student);
                 return RedirectToAction("Index");
             }
-            ViewBag.depts = context.Departments.ToList();
+              ViewBag.depts = dService.GetAll();
             return View(student);
 
         }
@@ -38,9 +49,10 @@ namespace EduManage.Controllers
 
             if (Id == null)
                 return BadRequest();
-            var student = context.Students.Include(s=>s.StudentCourses).ThenInclude(c=>c.Course)
-                .Include(d => d.Department)
-            .FirstOrDefault(d => d.Id == Id);
+            //var student = context.Students.Include(s=>s.StudentCourses).ThenInclude(c=>c.Course)
+            //    .Include(d => d.Department)
+            //.FirstOrDefault(d => d.Id == Id);
+            var student = service.GetById(Id.Value);
             if (student == null)
                 return NotFound();
 
@@ -53,11 +65,12 @@ namespace EduManage.Controllers
 
             if (Id == null)
                 return BadRequest();
-            var student = context.Students.Include(d => d.Department)
-                .FirstOrDefault(d => d.Id == Id);
+            //var student = context.Students.Include(d => d.Department).FirstOrDefault(d => d.Id == Id);
+            var student = service.GetById(Id.Value);
+                
             if (student == null)
                 return NotFound();
-            ViewBag.depts = context.Departments.ToList();
+            ViewBag.depts = dService.GetAll();
             return View(student);
 
         }
@@ -66,50 +79,31 @@ namespace EduManage.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.Students.Update(student);
-                context.SaveChanges();
+                //context.Students.Update(student);
+                //context.SaveChanges();
+                service.Update(student);
                 return RedirectToAction("Index");
             }
-            ViewBag.depts = context.Departments.ToList();
+            //ViewBag.depts = context.Departments.ToList();
+            ViewBag.depts = dService.GetAll();
+
             return View(student);
         }
 
         public IActionResult Delete(int? Id)
         {
-
-
-            if (Id == null)
-                return BadRequest();
-            var student = context.Students.Include(d => d.Department).FirstOrDefault(d => d.Id == Id);
-            if (student == null)
-                return NotFound();
-
-            return View(student);
-
-        }
-        [HttpPost]
-        [ActionName("Delete")]
-        public IActionResult ConfirmDelete(int? Id)
-        {
-            var student = context.Students.Include(d => d.Department).FirstOrDefault(d => d.Id == Id);
-            if (ModelState.IsValid)
-            {
-
-                context.Students.Remove(student);
-                context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.depts = context.Departments.ToList();
-            return View(student);
+            service.Delete(Id.Value);
+            return RedirectToAction("Index");
         }
 
 
-        public IActionResult CheckEmailExistance(string Email,int Id)
+        public IActionResult CheckEmailExistance(string Email, int Id)
         {
-           var res= context.Students.FirstOrDefault(s => s.Email == Email);
-            if (res != null && res.Id !=Id)    
+            //var res = context.Students.FirstOrDefault(s => s.Email == Email);
+      
+            if (service.CheckEmailExistance(Email,Id))
                 return Json(false);
-            
+
             return Json(true);
         }
     }

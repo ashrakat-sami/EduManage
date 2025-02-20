@@ -11,6 +11,8 @@
         [Required]
         public int Capacity { get; set; }
 
+        public bool Status { get; set; }  //or soft delete
+
         public virtual List<Student> Students { get; set; } = new List<Student>();
 
         public virtual List<Course> Courses { get; set; } = new List<Course>();

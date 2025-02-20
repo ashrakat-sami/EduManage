@@ -2,6 +2,15 @@
 {
     public class ApplicationDbContext:DbContext
     {
+        public ApplicationDbContext()
+        {
+            
+        }
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+       : base(options)
+        {
+        }
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Department> Departments { get; set; }
@@ -12,8 +21,9 @@
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=EduManage;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+
+            optionsBuilder.UseLazyLoadingProxies()
+                .UseSqlServer("Data Source=.;Initial Catalog=EduManage;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

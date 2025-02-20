@@ -36,7 +36,7 @@
                     <td>@d.Capacity</td>
                     <td><a asp-action="Details" asp-controller="Department" asp-route-Id="@d.Id" class="btn btn-primary">Details</a></td>
                     <td><a asp-action="Edit" asp-controller="Department" asp-route-Id="@d.Id" class="btn bg-success" style="color:white">Edit</a></td>
-                    <td><a asp-action="Delete" asp-controller="Department" asp-route-Id="@d.Id" class="btn btn-danger">Delete</a></td>
+                    <td><a asp-action="Delete" asp-controller="Department" asp-route-Id="@d.Id" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a></td>
 
                 </tr>
             }

@@ -10,6 +10,8 @@ namespace EduManage.Models
         public int? StdId { get; set; }
         [ForeignKey("Course")]
         public int? CrsId { get; set; }
+        public bool Status { get; set; }
+
 
         public virtual Student Student { get; set; }
 

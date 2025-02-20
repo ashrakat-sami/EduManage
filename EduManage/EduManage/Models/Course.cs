@@ -8,6 +8,8 @@ namespace EduManage.Models
         public string Name { get; set; }
 
         public int Duration { get; set; }
+        public bool Status { get; set; }
+
 
         [ForeignKey("Department")]
         public int? DeptId { get; set; }

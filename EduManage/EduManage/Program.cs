@@ -1,3 +1,6 @@
+using EduManage.Data;
+using EduManage.Services;
+
 namespace EduManage
 {
     public class Program
@@ -9,7 +12,16 @@ namespace EduManage
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddDbContext<ApplicationDbContext>(c =>
+            {
+                c.UseSqlServer(builder.Configuration.GetConnectionString("conection"));
+            });
+            //Dependency injection
+            builder.Services.AddSingleton<IDepartment, DepartmentService>();
+            builder.Services.AddSingleton<IStudent, StudentService>();
             var app = builder.Build();
+           
+           
             #region Try Middleware
             //app.Run(async context =>
             //{

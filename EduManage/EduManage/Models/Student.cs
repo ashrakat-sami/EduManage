@@ -6,6 +6,8 @@
         
         [ForeignKey("Department")]
         public int DeptId { get; set; }
+        public bool Status { get; set; }
+
 
         public virtual Department Department { get; set; }
 

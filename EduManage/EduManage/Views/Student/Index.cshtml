@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" />
 
 
 <a asp-action="Create" asp-controller="Student" class="btn btn-info" style="color:white">Add new student</a> <br />
@@ -42,8 +43,8 @@
                     <td>@d.Email</td>
                     <td>@d.Department.Name</td>
                     <td><a asp-action="Details" asp-controller="Student" asp-route-Id="@d.Id" class="btn btn-primary">Details</a></td>
-                            <td><a asp-action="Edit" asp-controller="Student" asp-route-Id="@d.Id" class="btn bg-success" style="color:white">Edit</a></td>
-                    <td><a asp-action="Delete" asp-controller="Student" asp-route-Id="@d.Id" class="btn btn-danger">Delete</a></td>
+                    <td><a asp-action="Edit" asp-controller="Student" asp-route-Id="@d.Id" class="btn bg-success" style="color:white">Edit</a></td>
+                    <td><a asp-action="Delete" asp-controller="Student" asp-route-Id="@d.Id" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a></td>
 
                 </tr>
             }

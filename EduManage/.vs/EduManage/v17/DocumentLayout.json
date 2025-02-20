@@ -1,54 +1,19 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "EduManage\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "EduManage\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T19:48:47.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Program.cs",
-              "RelativeDocumentMoniker": "EduManage\\Program.cs",
-              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Program.cs",
-              "RelativeToolTip": "EduManage\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T19:17:35.699Z",
-              "EditorCaption": ""
             }
           ]
         }
