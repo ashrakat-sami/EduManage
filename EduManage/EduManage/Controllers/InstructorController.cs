@@ -1,14 +1,18 @@
 ﻿using EduManage.Data;
+using EduManage.Filters;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EduManage.Controllers
 {
+    [MyCustomExceptionFilter]
     public class InstructorController : Controller
     {
         ApplicationDbContext context = new ApplicationDbContext();
         public IActionResult Index()
         {
-            var insList = context.Instructors.Include(d => d.Courses).ToList();
+          
+            var insList = context.Instructors.Where(s=>s.Status==true)
+                .Include(d => d.Courses).ToList();
             return View(insList);
 
         }
@@ -24,6 +28,8 @@ namespace EduManage.Controllers
         {
             if (ModelState.IsValid)
             {
+                instructor.Status = true;
+
                 context.Instructors.Add(instructor);
                 context.SaveChanges();
                 return RedirectToAction("Index");
@@ -39,13 +45,13 @@ namespace EduManage.Controllers
 
             if (Id == null)
                 return BadRequest();
-            var student = context.Students.Include(s => s.StudentCourses).ThenInclude(c => c.Course)
-                .Include(d => d.Department)
-            .FirstOrDefault(d => d.Id == Id);
-            if (student == null)
+            var instructor = context.Instructors.Include(c => c.Courses).FirstOrDefault(d => d.Id == Id);
+
+
+            if (instructor == null)
                 return NotFound();
 
-            return View(student);
+            return View(instructor);
 
         }
         public IActionResult Edit(int? Id)
@@ -54,57 +60,42 @@ namespace EduManage.Controllers
 
             if (Id == null)
                 return BadRequest();
-            var student = context.Students.Include(d => d.Department)
-                .FirstOrDefault(d => d.Id == Id);
-            if (student == null)
+            var instructor = context.Instructors.Include(c => c.Courses).FirstOrDefault(d => d.Id == Id);
+            if (instructor == null)
                 return NotFound();
-            ViewBag.depts = context.Departments.ToList();
-            return View(student);
+            //ViewBag.courses = context.Courses.ToList();
+            return View(instructor);
 
         }
         [HttpPost]
-        public IActionResult Edit(Student student)
+        public IActionResult Edit(Instructor instructor)
         {
             if (ModelState.IsValid)
             {
-                context.Students.Update(student);
+                instructor.Status = true;
+                context.Instructors.Update(instructor);
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.depts = context.Departments.ToList();
-            return View(student);
+           // ViewBag.courses = context.Courses.ToList();
+            return View(instructor);
         }
 
         public IActionResult Delete(int? Id)
         {
-
-
-            if (Id == null)
-                return BadRequest();
-            var student = context.Students.Include(d => d.Department).FirstOrDefault(d => d.Id == Id);
-            if (student == null)
-                return NotFound();
-
-            return View(student);
-
-        }
-        [HttpPost]
-        [ActionName("Delete")]
-        public IActionResult ConfirmDelete(int? Id)
-        {
-            var student = context.Students.Include(d => d.Department).FirstOrDefault(d => d.Id == Id);
-            if (ModelState.IsValid)
+            var instructor = context.Instructors.FirstOrDefault(d => d.Id == Id);
+          
+            if (instructor != null)
             {
-
-                context.Students.Remove(student);
+                instructor.Status = false;
                 context.SaveChanges();
-                return RedirectToAction("Index");
             }
-            ViewBag.depts = context.Departments.ToList();
-            return View(student);
+
+            return RedirectToAction("Index");
         }
 
 
-        
+
+
     }
 }

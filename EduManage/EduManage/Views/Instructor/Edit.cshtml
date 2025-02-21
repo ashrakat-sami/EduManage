@@ -1,0 +1,56 @@
+﻿@model Instructor
+@{
+    ViewData["Title"] = "InstructorEdit";
+    
+}
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<h1>Edit</h1>
+<div id="Create">
+
+    <form method="post">
+        <input asp-for="Id" hidden />
+        <label asp-for="Fname">First name  </label>
+        <input asp-for="Fname" class="Uinput" />
+        <span asp-validation-for="Fname" class="errormessage"></span>
+        <br />
+        <label asp-for="Lname">Last name  </label>
+        <input asp-for="Lname" class="Uinput" />
+        <span asp-validation-for="Lname" class="errormessage"></span>
+        <br />
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="Uinput" />
+        <span asp-validation-for="Age" class="errormessage"></span>
+        <br />
+        <label asp-for="Phone">
+        </label>
+        <input asp-for="Phone" class="Uinput" />
+        <span asp-validation-for="Phone" class="errormessage"></span>
+        <br />
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="Uinput" />
+        <span asp-validation-for="Email" class="errormessage"></span>
+        <br />
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="Uinput" />
+        <span asp-validation-for="Password" class="errormessage"></span>
+        <br />
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" class="Uinput" />
+        <span asp-validation-for="ConfirmPassword" class="errormessage"></span>
+        <br />
+     
+
+        <input type="submit" value="Edit" id="btn" />
+
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

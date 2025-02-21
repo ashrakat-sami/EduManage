@@ -6,7 +6,7 @@ namespace EduManage.Controllers
 {
     public class DepartmentController : Controller
     {
-        ApplicationDbContext db= new ApplicationDbContext();
+       // ApplicationDbContext db= new ApplicationDbContext();
         private IDepartment dservice;
         public DepartmentController(IDepartment _dservice)
         {

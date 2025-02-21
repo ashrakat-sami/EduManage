@@ -33,7 +33,7 @@ namespace EduManage.Services
 
         public void Delete(int id)
         {
-            var student = context.Students.AsNoTracking().FirstOrDefault(d => d.Id == id);
+            var student = context.Students.FirstOrDefault(d => d.Id == id);
             if (student != null)
             {
                 student.Status = false;

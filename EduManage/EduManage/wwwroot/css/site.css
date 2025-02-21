@@ -40,7 +40,8 @@ Body {
 }
 
     #welcome span {
-        color: rgb(220, 24, 237);
+        color: #b66ee8;
+        font-weight:bolder;
     }
 
 pre 
@@ -56,7 +57,7 @@ pre
     padding:20px;
 }
 label{
-   width:150px;
+   width:190px;
 }
 input {
     margin: 10px;
@@ -67,7 +68,7 @@ input {
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #f1c7c7;
+    background-color: #ccdbfd;
 }
 .Uinput:hover {
     width: 450px;
@@ -83,7 +84,7 @@ input {
     border: #151f48 2px solid;
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(21, 31, 72, 0.5);
-    margin-left:300px;
+    margin-left:320px;
 }
     #btn:hover {
         background-color: lightgray;
@@ -94,7 +95,7 @@ select {
     margin-bottom: 20px;
     padding-left: 10px;
     margin-top: 10px;
-    background-color: #f1c7c7;
+    background-color: #ccdbfd;
     border-radius: 5px;
     border: #afc5e8;
     width: 150px;

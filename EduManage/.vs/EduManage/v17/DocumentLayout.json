@@ -1,7 +1,60 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\filters\\mycustomexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\filters\\mycustomexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|c:\\users\\ashrakat\\desktop\\projects\\edumanagemvc\\edumanage\\edumanage\\services\\idepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD7B660-6BD3-4A76-B7F5-E19A8B89A717}|EduManage\\EduManage.csproj|solutionrelative:edumanage\\services\\idepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +62,180 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "EduManage\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "EduManage\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA4wH8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:50:18.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "EduManage\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "EduManage\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-21T11:34:13.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduManage\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "EduManage\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T11:28:16.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "EduManage\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\StudentService.cs",
+              "RelativeToolTip": "EduManage\\Services\\StudentService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:26:04.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EduManage\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EduManage\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T11:24:11.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyCustomExceptionFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Filters\\MyCustomExceptionFilter.cs",
+              "RelativeDocumentMoniker": "EduManage\\Filters\\MyCustomExceptionFilter.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Filters\\MyCustomExceptionFilter.cs",
+              "RelativeToolTip": "EduManage\\Filters\\MyCustomExceptionFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:23:03.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\appsettings.json",
+              "RelativeDocumentMoniker": "EduManage\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\appsettings.json",
+              "RelativeToolTip": "EduManage\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T11:21:47.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "EduManage\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "EduManage\\Controllers\\InstructorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:08:23.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "EduManage\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "EduManage\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:08:19.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "EduManage\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "EduManage\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:20:58.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDepartment.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\IDepartment.cs",
+              "RelativeDocumentMoniker": "EduManage\\Services\\IDepartment.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Services\\IDepartment.cs",
+              "RelativeToolTip": "EduManage\\Services\\IDepartment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:20:50.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "EduManage\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "EduManage\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:08:15.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Program.cs",
+              "RelativeDocumentMoniker": "EduManage\\Program.cs",
+              "ToolTip": "C:\\Users\\Ashrakat\\Desktop\\Projects\\EduManageMVC\\EduManage\\EduManage\\Program.cs",
+              "RelativeToolTip": "EduManage\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:08:00.644Z",
+              "EditorCaption": ""
             }
           ]
         }
